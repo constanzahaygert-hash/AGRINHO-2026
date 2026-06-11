@@ -4,41 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGRINHO 2026</title>
+    <title>AGRINHO 2026 - Agricultura Sustentável</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- HEADER / MENU -->
     <header>
-        <h1>AGRINHO 2026</h1>
-        <p>Projeto Agrinho 2026</p>
+        <div class="logo">
+            <h1>AGRINHO 2026</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#producao">Produção Agrícola</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#desafios">Desafios Ambientais</a></li>
+                <li><a href="#solucoes">Soluções e Futuro</a></li>
+                <li><a href="#quiz">Quiz Interativo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <!-- BANNER PRINCIPAL -->
+    <section id="banner">
+        <img src="img/banner.jpg" alt="Plantação moderna com drones e energia solar">
+        <div class="banner-text">
+            <h2>Produzir hoje preservando o amanhã</h2>
+            <a href="#producao" class="btn">Saiba Mais</a>
+            <a href="#quiz" class="btn">Faça o Quiz</a>
+        </div>
+    </section>
 
-        <section>
-            <h2>Sobre o Projeto</h2>
-            <p>
-                Este site foi desenvolvido para apresentar informações
-                relacionadas ao programa Agrinho 2026.
-            </p>
-        </section>
+    <!-- INTRODUÇÃO -->
+    <section id="introducao">
+        <h2>Sobre o Agronegócio Sustentável</h2>
+        <p>O site tem como objetivo informar e conscientizar sobre a importância do agronegócio sustentável,
+            mostrando como a tecnologia pode aumentar a produção agrícola sem comprometer os recursos naturais.</p>
+    </section>
 
-        <section>
-            <h2>Objetivos</h2>
-            <ul>
-                <li>Promover a educação.</li>
-                <li>Valorizar o campo e a cidade.</li>
-                <li>Incentivar a sustentabilidade.</li>
-            </ul>
-        </section>
+    <!-- PRODUÇÃO AGRÍCOLA -->
+    <section id="producao">
+        <h2>Produção Agrícola</h2>
+        <p>O agronegócio é um dos setores mais importantes da economia brasileira, gerando empregos, exportações e crescimento econômico.</p>
+        <!-- Aqui podem entrar cards ou gráficos -->
+    </section>
 
-    </main>
+    <!-- SUSTENTABILIDADE -->
+    <section id="sustentabilidade">
+        <h2>Sustentabilidade</h2>
+        <p>Conservação do solo, economia de água e uso de energias renováveis são essenciais para garantir a produção futura.</p>
+        <!-- Aqui podem entrar ícones e imagens comparativas -->
+    </section>
 
+    <!-- DESAFIOS AMBIENTAIS -->
+    <section id="desafios">
+        <h2>Desafios Ambientais</h2>
+        <p>Problemas como desmatamento, poluição, desperdício de água e emissão de carbono impactam o meio ambiente.</p>
+        <!-- Gráficos e alertas visuais -->
+    </section>
+
+    <!-- SOLUÇÕES E FUTURO -->
+    <section id="solucoes">
+        <h2>Soluções e Futuro</h2>
+        <p>Agricultura regenerativa, drones, inteligência artificial e energia limpa são caminhos para um futuro sustentável.</p>
+        <!-- Timeline ou vídeos -->
+    </section>
+
+    <!-- QUIZ / CALCULADORA -->
+    <section id="quiz">
+        <h2>Quiz Sustentável</h2>
+        <p>Teste seus conhecimentos sobre práticas agrícolas sustentáveis.</p>
+        <!-- Aqui será implementado o quiz com JS -->
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p>O futuro da agricultura depende das escolhas sustentáveis feitas hoje.</p>
+    </section>
+
+    <!-- RODAPÉ -->
     <footer>
-        <p>&copy; 2026 - AGRINHO</p>
+        <p>&copy; 2026 - AGRINHO 2026 | Redes Sociais</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
