@@ -29,10 +29,7 @@ body {
     line-height: 1.6;
 }
 
-/* =========================
-   HEADER
-========================= */
-.header {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,26 +38,26 @@ body {
     color: white;
 }
 
-.nav ul {
+nav ul{
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-.nav a {
+nav a{
     color: white;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.nav a:hover {
+nav a:hover {
     color: var(--amarelo);
 }
 
 /* =========================
    HERO
 ========================= */
-.hero {
+hero {
     height: 90vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
                 url("img/agro.jpg");
