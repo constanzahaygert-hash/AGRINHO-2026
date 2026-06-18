@@ -10,7 +10,7 @@
 /* =========================
    VARIÁVEIS (PALETA AGRO)
 ========================= */
-:root {
+:root{
     --verde: #2E7D32;
     --amarelo: #FBC02D;
     --marrom: #6D4C41;
@@ -22,7 +22,7 @@
 /* =========================
    ESTILO GLOBAL
 ========================= */
-body {
+body{
     font-family: 'Poppins', sans-serif;
     background: var(--branco);
     color: var(--texto);
