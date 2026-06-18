@@ -69,15 +69,15 @@ hero {
     color: white;
 }
 
-.hero h1 {
+hero h1{
     font-size: 2.5rem;
 }
 
-.hero-buttons {
+hero-buttons{
     margin-top: 20px;
 }
 
-.btn {
+btn{
     background: var(--verde);
     padding: 10px 20px;
     color: white;
@@ -86,7 +86,7 @@ hero {
     border-radius: 5px;
 }
 
-.btn-outline {
+btn-outline{
     border: 2px solid white;
     padding: 10px 20px;
     color: white;
@@ -96,19 +96,19 @@ hero {
 /* =========================
    SEÇÕES
 ========================= */
-.section {
+section{
     padding: 60px 20px;
     text-align: center;
 }
 
-.green {
+green{
     background: var(--cinza);
 }
 
 /* =========================
    CARDS
 ========================= */
-.cards {
+cards{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -116,7 +116,7 @@ hero {
     margin-top: 20px;
 }
 
-.card {
+card{
     background: green;
     padding: 20px;
     width: 250px;
@@ -125,18 +125,18 @@ hero {
     transition: 0.3s;
 }
 
-.card:hover {
+card:hover{
     transform: translateY(-5px);
 }
 
-.danger {
+danger{
     border-left: 5px solid red;
 }
 
 /* =========================
    FORMULÁRIO
 ========================= */
-.form {
+form{
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -144,14 +144,14 @@ hero {
     gap: 10px;
 }
 
-.form input,
-.form textarea {
+form input,
+form textarea{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.form button {
+form button{
     background: var(--verde);
     color: white;
     padding: 10px;
@@ -162,7 +162,7 @@ hero {
 /* =========================
    FOOTER
 ========================= */
-.footer {
+footer{
     background: var(--marrom);
     color: white;
     text-align: center;
