@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-label="AGRINHO — fazenda sustentável gerada por IA">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#2E7D32"/>
+      <stop offset="1" stop-color="#FBC02D"/>
+    </linearGradient>
+    <style>
+      .bg { fill: #F6F7F3; }
+      .panel { fill: url(#g1); opacity: 0.92; }
+      .sun { fill: #FFD659; opacity: 0.95; }
+      .text { font-family: Poppins, Roboto, Arial, sans-serif; fill:#ffffff; font-weight:700; }
+      .muted { font-family: Open Sans, Arial, sans-serif; fill:#264242; font-size:20px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1400" height="900" rx="20" ry="20"/>
+  <!-- abstract fields -->
+  <g transform="translate(60,80)">
+    <rect x="0" y="420" width="1280" height="320" rx="18" class="panel" />
+    <g transform="translate(60,80) scale(1)">
+      <path d="M0 240 C120 180, 360 260, 480 200 C620 120, 900 220, 1280 140 L1280 320 L0 320 Z" fill="#ffffff" opacity="0.06"/>
+      <g transform="translate(40,20)">
+        <!-- stylized rows -->
+        <g fill="#fff" opacity="0.12">
+          <rect x="0" y="40" width="1100" height="18" rx="9"/>
+          <rect x="0" y="80" width="950" height="18" rx="9"/>
+          <rect x="0" y="120" width="1000" height="18" rx="9"/>
+          <rect x="0" y="160" width="700" height="18" rx="9"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- sun / energy -->
+    <circle class="sun" cx="1100" cy="120" r="72"/>
+    <g transform="translate(980,60)" fill="#fff">
+      <rect x="0" y="0" width="120" height="72" rx="8" opacity="0.12"/>
+      <text x="60" y="44" font-size="22" text-anchor="middle" class="text">AGRINHO</text>
+    </g>
+
+    <!-- leaf icon -->
+    <g transform="translate(70,60) scale(1.2)">
+      <path d="M150 80 C120 30, 40 18, 10 120 C40 110, 110 100, 150 80 Z" fill="#A5D6A7" opacity="0.8"/>
+      <path d="M120 40 C140 60, 170 68, 220 100" stroke="#2E7D32" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9"/>
+    </g>
+
+    <!-- caption -->
+    <text x="80" y="70" class="muted" font-size="28">AGRINHO — IA / visual placeholder</text>
+    <text x="80" y="105" class="muted" font-size="18">Fazenda sustentável • Drones • Energia limpa</text>
+  </g>
+</svg>
