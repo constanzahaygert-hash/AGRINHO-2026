@@ -1,275 +1,295 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Agro Sustentável — Produzir hoje preservando o amanhã</title>
-  <meta name="description" content="Informações e soluções sobre agronegócio sustentável: tecnologia, práticas regenerativas e energia limpa." />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Sustentável — Produzir hoje preservando o amanhã</title>
+<meta name="description" content="Como o agronegócio pode crescer economicamente sem comprometer os recursos naturais das futuras gerações.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#home" aria-label="Agro Sustentável — Voltar ao início">
-        <svg class="logo-mark" viewBox="0 0 64 64" width="40" height="40" aria-hidden="true">
-          <circle cx="32" cy="32" r="30" fill="var(--green)"/>
-          <path d="M16 40c8-12 20-12 28 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-          <path d="M32 12v20" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-        </svg>
-        <span class="logo-text">Agro Sustentável</span>
-      </a>
 
-      <nav class="main-nav" aria-label="Menu principal">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
-        <ul id="nav-list" class="nav-list">
-          <li><a href="#producao">Produção Agrícola</a></li>
-          <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-          <li><a href="#desafios">Desafios Ambientais</a></li>
-          <li><a href="#solucoes">Soluções & Futuro</a></li>
-          <li><a href="#quiz">Quiz</a></li>
-          <li><a href="#calculadora">Calculadora</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<div class="progress-bar" id="progressBar"></div>
 
-  <main id="home">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1 id="hero-title">Produzir hoje preservando o amanhã</h1>
-          <p class="lede">Como a tecnologia e práticas sustentáveis permitem aumentar a produção agrícola sem comprometer recursos naturais.</p>
-          <div class="hero-ctas">
-            <a class="btn" href="#sustentabilidade">Tecnologias Sustentáveis</a>
-            <a class="btn btn-outline" href="#quiz">Faça o Quiz</a>
-          </div>
-        </div>
-        <div class="hero-media" aria-hidden="true">
-          <!-- Placeholder visuals: replace with real images in /img -->
-          <div class="hero-cards">
-            <div class="card small">
-              <img src="img/drone.jpg" alt="Drone monitorando plantação" />
-            </div>
-            <div class="card medium">
-              <img src="img/solar.jpg" alt="Painéis solares em uma fazenda" />
-            </div>
-            <div class="card small">
-              <img src="img/irrigacao.jpg" alt="Irrigação inteligente" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  <!-- Hero media: usar imagem agrinho principal -->
-<div class="hero-media" aria-hidden="true">
-  <div class="hero-cards">
-    <div class="card medium hero-asset">
-      <img src="assets/agrinho-1.svg" alt="AGRINHO — visão IA de fazenda sustentável" />
-    </div>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#home" class="logo">
+      <svg viewBox="0 0 24 24" class="logo-icon" aria-hidden="true"><path d="M12 2c-2 4-6 6-6 11a6 6 0 0 0 12 0c0-5-4-7-6-11z"/></svg>
+      <span>Agro<strong>Sustentável</strong></span>
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <a href="#producao" class="nav-link">Produção</a>
+      <a href="#sustentabilidade" class="nav-link">Sustentabilidade</a>
+      <a href="#desafios" class="nav-link">Desafios</a>
+      <a href="#solucoes" class="nav-link">Soluções</a>
+      <a href="#interativo" class="nav-link">Quiz &amp; Calculadora</a>
+      <a href="#contato" class="nav-link nav-cta">Contato</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</div>
-    
-    <section id="intro" class="container intro">
-      <h2>Por que o agronegócio sustentável é essencial?</h2>
-      <p>O agronegócio é pilar econômico, gera empregos e alimenta o mundo. Unindo tecnologia e práticas regenerativas podemos aumentar produtividade preservando solo, água e biodiversidade.</p>
-    </section>
+</header>
 
-    <section id="producao" class="container section cards-grid">
-      <h2>Produção Agrícola</h2>
-      <div class="cards">
-        <article class="info-card">
-          <h3>Importância Econômica</h3>
-          <p>Gera empregos, impulsiona exportações e alimenta cadeias produtivas.</p>
-        </article>
-        <article class="info-card">
-          <h3>Dados e Estatísticas</h3>
-          <p>Visualize tendências de produtividade e exportações com gráficos claros.</p>
-        </article>
-        <article class="info-card">
-          <h3>Tecnologia no Campo</h3>
-          <p>Sensores, GPS e softwares tornam a produção mais eficiente e sustentável.</p>
-        </article>
-      </div>
-      <div class="stats">
-        <div class="stat">
-          <strong>+20%</strong>
-          <span>Produtividade com agricultura de precisão (exemplo)</span>
-        </div>
-        <div class="stat">
-          <strong>70%</strong>
-          <span>Potencial de redução de desperdício via irrigação inteligente</span>
-        </div>
-        <div class="stat">
-          <strong>—30%</strong>
-          <span>Emissões estimadas ao migrar para energia renovável</span>
-        </div>
-      </div>
-    </section>
+<main>
 
-    <section id="sustentabilidade" class="container section">
-      <h2>Sustentabilidade</h2>
-      <div class="two-col">
-        <div>
-          <h3>Práticas que preservam o solo e a água</h3>
-          <ul>
-            <li>Plantio direto e rotação de culturas</li>
-            <li>Cobertura vegetal e adubação verde</li>
-            <li>Irrigação por sensores e gestão hídrica</li>
-          </ul>
-          <p>O objetivo é produzir mais com menos recursos, garantindo a próxima geração.</p>
-        </div>
-        <div class="icons-grid">
-          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20" stroke="var(--green)" stroke-width="2" stroke-linecap="round"/></svg><span>Solo</span></div>
-          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c4 0 6 4 6 6s-2 4-6 10c-4-6-6-8-6-10s2-6 6-6z" fill="var(--blue)"/></svg><span>Água</span></div>
-          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h20" stroke="var(--yellow)" stroke-width="3"/></svg><span>Energia</span></div>
-          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16" stroke="var(--brown)" stroke-width="2"/></svg><span>Biodiversidade</span></div>
-        </div>
-      </div>
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="hero-field" aria-hidden="true">
+      <div class="row row-1"></div>
+      <div class="row row-2"></div>
+      <div class="row row-3"></div>
+      <div class="row row-4"></div>
+      <div class="row row-5"></div>
+      <svg class="sprout sprout-a" viewBox="0 0 40 60"><path d="M20 60V30" stroke="currentColor" stroke-width="3" fill="none"/><path d="M20 30c0-10-10-12-14-10 2 8 8 12 14 10z" fill="currentColor"/><path d="M20 24c0-9 10-11 14-9-2 8-8 11-14 9z" fill="currentColor"/></svg>
+      <svg class="sprout sprout-b" viewBox="0 0 40 60"><path d="M20 60V36" stroke="currentColor" stroke-width="3" fill="none"/><path d="M20 36c0-8-8-10-11-8 1.5 6.5 6.5 9.5 11 8z" fill="currentColor"/></svg>
+      <svg class="sprout sprout-c" viewBox="0 0 40 60"><path d="M20 60V30" stroke="currentColor" stroke-width="3" fill="none"/><path d="M20 30c0-10-10-12-14-10 2 8 8 12 14 10z" fill="currentColor"/><path d="M20 24c0-9 10-11 14-9-2 8-8 11-14 9z" fill="currentColor"/></svg>
+    </div>
 
-      <div class="chart" aria-hidden="true">
-        <h4>Exemplo — Economia de água com irrigação inteligente</h4>
-        <div class="bar-chart">
-          <div class="bar" style="--value:75%">Irrigação tradicional <span>100%</span></div>
-          <div class="bar" style="--value:40%">Irrigação inteligente <span>40%</span></div>
+    <div class="hero-content">
+      <p class="eyebrow">Economia · Tecnologia · Meio ambiente</p>
+      <h1>Produzir hoje<br><span>preservando</span> o amanhã.</h1>
+      <p class="hero-lead">Como o agronegócio pode crescer economicamente sem comprometer os recursos naturais das futuras gerações? Através de tecnologia sustentável, preservação ambiental e práticas agrícolas inteligentes.</p>
+      <div class="hero-actions">
+        <a href="#solucoes" class="btn btn-primary">Saiba mais</a>
+        <a href="#interativo" class="btn btn-ghost">Faça o quiz</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUÇÃO AGRÍCOLA -->
+  <section class="section" id="producao">
+    <div class="section-inner">
+      <p class="eyebrow">Produção agrícola</p>
+      <h2>O motor da economia brasileira</h2>
+      <p class="section-lead">O agronegócio movimenta empregos, exportações, indústria e tecnologia — sustentando boa parte da economia do país.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-icon" data-icon="tractor"></span>
+          <span class="stat-label">Geração de</span>
+          <span class="stat-value">Empregos</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon" data-icon="chart"></span>
+          <span class="stat-label">Crescimento</span>
+          <span class="stat-value">Econômico</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon" data-icon="grain"></span>
+          <span class="stat-label">Produção de</span>
+          <span class="stat-value">Alimentos</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon" data-icon="export"></span>
+          <span class="stat-label">Abertura de</span>
+          <span class="stat-value">Exportações</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="desafios" class="container section">
-      <h2>Desafios Ambientais</h2>
-      <ul class="challenges">
-        <li><strong>Desmatamento</strong> — perda de biodiversidade e erosão.</li>
-        <li><strong>Uso excessivo da água</strong> — escassez e degradação.</li>
-        <li><strong>Emissão de carbono</strong> — máquinas e queimadas ampliam efeito estufa.</li>
-      </ul>
-      <div class="alert">A expansão sem planejamento pode comprometer recursos essenciais. A tecnologia reduz riscos quando aplicada com políticas e boas práticas.</div>
-    </section>
+  <!-- SUSTENTABILIDADE -->
+  <section class="section section-alt" id="sustentabilidade">
+    <div class="section-inner">
+      <p class="eyebrow">Sustentabilidade no campo</p>
+      <h2>Produzir mais, gastar menos recursos</h2>
+      <p class="section-lead">Menos desperdício, mais planejamento: a sustentabilidade agrícola garante alimento hoje sem comprometer a produção de amanhã.</p>
 
-    <section id="solucoes" class="container section">
-      <h2>Soluções e Futuro</h2>
-      <div class="solutions-grid">
-        <article>
-          <h3>Agricultura Regenerativa</h3>
-          <p>Rotação de culturas, cobertura vegetal e plantio direto para recuperar o solo.</p>
+      <div class="tech-grid">
+        <article class="tech-card">
+          <span class="tech-icon" data-icon="satellite"></span>
+          <h3>Agricultura de precisão</h3>
+          <p>Sensores, GPS e softwares aplicam fertilizantes no ponto certo, evitando desperdício e aumentando a produtividade.</p>
         </article>
-        <article>
-          <h3>Tecnologia Integrada</h3>
-          <p>Drones, IA e monitoramento ambiental reduzem desperdício e identificam problemas cedo.</p>
+        <article class="tech-card">
+          <span class="tech-icon" data-icon="drop"></span>
+          <h3>Irrigação inteligente</h3>
+          <p>Sistemas automatizados controlam quantidade e horário ideais de água, economizando o recurso mais precioso do campo.</p>
         </article>
-        <article>
-          <h3>Energia Renovável</h3>
-          <p>Sistemas solares e biomassa reduzem custos e emissões.</p>
+        <article class="tech-card">
+          <span class="tech-icon" data-icon="drone"></span>
+          <h3>Drones agrícolas</h3>
+          <p>Monitoram plantações, identificam pragas e analisam o solo com pulverização precisa e eficiente.</p>
+        </article>
+        <article class="tech-card">
+          <span class="tech-icon" data-icon="sun"></span>
+          <h3>Energia renovável</h3>
+          <p>Solar, eólica e biomassa reduzem custos e emissão de carbono, tornando a produção mais limpa.</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- DESAFIOS AMBIENTAIS -->
+  <section class="section section-dark" id="desafios">
+    <div class="section-inner">
+      <p class="eyebrow">Desafios ambientais</p>
+      <h2>O que está em jogo</h2>
+      <p class="section-lead">A expansão sem planejamento tem custos reais — e é preciso conhecê-los para evitá-los.</p>
+
+      <div class="impact-grid">
+        <div class="impact-card">
+          <span class="impact-icon" data-icon="tree"></span>
+          <h3>Desmatamento</h3>
+          <p>Perda de biodiversidade, alterações climáticas e erosão do solo.</p>
+        </div>
+        <div class="impact-card">
+          <span class="impact-icon" data-icon="drop-warn"></span>
+          <h3>Uso excessivo da água</h3>
+          <p>Escassez hídrica, degradação de rios e impactos ambientais em cadeia.</p>
+        </div>
+        <div class="impact-card">
+          <span class="impact-icon" data-icon="smoke"></span>
+          <h3>Emissão de carbono</h3>
+          <p>Máquinas e queimadas aumentam o efeito estufa e o aquecimento global.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÕES E FUTURO -->
+  <section class="section" id="solucoes">
+    <div class="section-inner">
+      <p class="eyebrow">Soluções e futuro</p>
+      <h2>Tecnologia a favor da preservação</h2>
+      <p class="section-lead">O futuro do campo une inteligência artificial, monitoramento ambiental e práticas que recuperam o solo.</p>
+
       <div class="timeline">
-        <div class="tl-step">2024 — Adoção crescente de sensores</div>
-        <div class="tl-step">2026 — Mais fazendas com energia solar</div>
-        <div class="tl-step">2030 — Práticas regenerativas difundidas</div>
-      </div>
-    </section>
-
-    <section id="quiz" class="container section interactive">
-      <h2>Quiz Sustentável</h2>
-      <p>Teste seus conhecimentos e veja seu perfil de produtor sustentável.</p>
-      <form id="quiz-form" class="quiz-form" aria-describedby="quiz-result">
-        <div class="q">
-          <p>1. Como costuma regular a irrigação?</p>
-          <label><input type="radio" name="q1" value="2" required> Uso horários fixos sem sensoriamento</label>
-          <label><input type="radio" name="q1" value="4"> Uso sensores e dados para ajustar</label>
-          <label><input type="radio" name="q1" value="3"> Uso parcialmente automação</label>
+        <div class="timeline-item">
+          <span class="timeline-icon" data-icon="leaf"></span>
+          <div>
+            <h3>Agricultura regenerativa</h3>
+            <p>Rotação de culturas, cobertura vegetal e plantio direto recuperam a saúde do solo.</p>
+          </div>
         </div>
-        <div class="q">
-          <p>2. Como gerencia a energia da fazenda?</p>
-          <label><input type="radio" name="q2" value="2" required> Só rede elétrica</label>
-          <label><input type="radio" name="q2" value="4"> Uso energia renovável</label>
-          <label><input type="radio" name="q2" value="3"> Planejo adotar energia limpa</label>
+        <div class="timeline-item">
+          <span class="timeline-icon" data-icon="ai"></span>
+          <div>
+            <h3>Inteligência artificial</h3>
+            <p>Modelos preditivos ajudam a planejar plantio, colheita e uso de insumos com precisão.</p>
+          </div>
         </div>
-        <div class="q">
-          <p>3. Práticas de solo:</p>
-          <label><input type="radio" name="q3" value="2" required> Cultivo contínuo sem rotação</label>
-          <label><input type="radio" name="q3" value="4"> Rotação e cobertura vegetal</label>
-          <label><input type="radio" name="q3" value="3"> Algumas práticas regenerativas</label>
+        <div class="timeline-item">
+          <span class="timeline-icon" data-icon="radar"></span>
+          <div>
+            <h3>Monitoramento ambiental</h3>
+            <p>Dados em tempo real acompanham solo, clima e biodiversidade das áreas produtivas.</p>
+          </div>
         </div>
-        <div class="q-actions">
-          <button type="submit" class="btn">Ver Resultado</button>
-          <button type="button" id="quiz-reset" class="btn btn-outline">Resetar</button>
-        </div>
-
-        <div id="quiz-result" class="result" role="status" aria-live="polite"></div>
-      </form>
-    </section>
-
-    <section id="calculadora" class="container section interactive">
-      <h2>Calculadora de Impacto Ambiental</h2>
-      <p>Insira estimativas para obter um indicador simples de impacto e recomendações.</p>
-      <form id="calc-form" class="calc-form" aria-describedby="calc-result">
-        <label>Consumo de água (m³ por hectare/ano)
-          <input type="number" id="water" min="0" value="1000" required />
-        </label>
-        <label>Consumo de energia (kWh/ano)
-          <input type="number" id="energy" min="0" value="5000" required />
-        </label>
-        <label>Emissões estimadas (ton CO₂/ano)
-          <input type="number" id="emissions" min="0" step="0.1" value="10" required />
-        </label>
-        <div class="q-actions">
-          <button type="submit" class="btn">Calcular Impacto</button>
-          <button type="button" id="calc-reset" class="btn btn-outline">Limpar</button>
-        </div>
-        <div id="calc-result" class="result" role="status" aria-live="polite"></div>
-      </form>
-    </section>
-
- <div class="gallery-grid" aria-live="polite">
-  <img src="assets/agrinho-1.svg" alt="AGRINHO — monitoramento" data-caption="AGRINHO — Monitoramento por IA" tabindex="0"/>
-  <img src="assets/agrinho-2.svg" alt="AGRINHO — energia e solo" data-caption="AGRINHO — Energia limpa e solo fértil" tabindex="0"/>
-  <img src="img/drone.jpg" alt="Drone agrícola" data-caption="Drone para monitoramento" tabindex="0"/>
-  <img src="img/irrigacao.jpg" alt="Irrigação inteligente" data-caption="Irrigação por sensores" tabindex="0"/>
-</div>
-    <section id="contato" class="container section contact">
-      <h2>Contato & Conscientização</h2>
-      <p>Fale conosco para parcerias, dúvidas ou sugestões.</p>
-      <form id="contact-form" class="contact-form" novalidate>
-        <label>Nome
-          <input type="text" id="name" required />
-        </label>
-        <label>E-mail
-          <input type="email" id="email" required />
-        </label>
-        <label>Mensagem
-          <textarea id="message" rows="4" required></textarea>
-        </label>
-        <div class="q-actions">
-          <button type="submit" class="btn">Enviar Mensagem</button>
-        </div>
-        <div id="contact-result" class="result" role="status" aria-live="polite"></div>
-      </form>
-      <div class="share">
-        <p>Compartilhe:</p>
-        <div class="socials">
-          <a href="#" aria-label="Compartilhar no Facebook">f</a>
-          <a href="#" aria-label="Compartilhar no Twitter">t</a>
-          <a href="#" aria-label="Compartilhar no WhatsApp">w</a>
+        <div class="timeline-item">
+          <span class="timeline-icon" data-icon="gear"></span>
+          <div>
+            <h3>Automação agrícola</h3>
+            <p>Máquinas conectadas reduzem desperdício e otimizam cada etapa da produção.</p>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Agro Sustentável — Produzir hoje preservando o amanhã.</p>
-      <p class="small">Pergunta norteadora: Como o agronegócio pode crescer economicamente sem comprometer recursos naturais?</p>
     </div>
-  </footer>
+  </section>
 
-  <!-- Lightbox modal for gallery -->
-  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
-    <button class="lightbox-close" aria-label="Fechar">✕</button>
-    <img class="lightbox-image" alt="" />
-    <p class="lightbox-caption"></p>
-  </div>
+  <!-- QUIZ + CALCULADORA -->
+  <section class="section section-alt" id="interativo">
+    <div class="section-inner">
+      <p class="eyebrow">Participe</p>
+      <h2>Teste seus conhecimentos e seu impacto</h2>
 
-  <script src="script.js" defer></script>
+      <div class="interactive-grid">
+
+        <!-- QUIZ -->
+        <div class="panel" id="quizPanel">
+          <h3>Quiz sustentável</h3>
+          <p class="panel-sub">Responda e descubra seu perfil ambiental.</p>
+
+          <div id="quizBody"></div>
+
+          <div class="quiz-result" id="quizResult" hidden>
+            <span class="quiz-result-title" id="quizResultTitle"></span>
+            <p id="quizResultText"></p>
+            <button class="btn btn-ghost btn-small" id="quizRestart">Refazer quiz</button>
+          </div>
+        </div>
+
+        <!-- CALCULADORA -->
+        <div class="panel" id="calcPanel">
+          <h3>Calculadora de impacto ambiental</h3>
+          <p class="panel-sub">Estime seu impacto a partir de três hábitos.</p>
+
+          <form id="calcForm" class="calc-form">
+            <label>
+              Consumo de água (litros/dia)
+              <input type="number" id="agua" min="0" placeholder="Ex: 150" required>
+            </label>
+            <label>
+              Uso de energia (kWh/mês)
+              <input type="number" id="energia" min="0" placeholder="Ex: 200" required>
+            </label>
+            <label>
+              Emissão estimada de transporte (km/semana)
+              <input type="number" id="transporte" min="0" placeholder="Ex: 80" required>
+            </label>
+            <button type="submit" class="btn btn-primary">Calcular impacto</button>
+          </form>
+
+          <div class="calc-result" id="calcResult" hidden>
+            <div class="calc-gauge">
+              <div class="calc-gauge-fill" id="calcGaugeFill"></div>
+            </div>
+            <span class="calc-level" id="calcLevel"></span>
+            <p id="calcText"></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section section-dark" id="contato">
+    <div class="section-inner section-inner-narrow">
+      <p class="eyebrow">Fale conosco</p>
+      <h2>O futuro depende das escolhas de hoje</h2>
+      <p class="section-lead">Tem dúvidas, sugestões ou quer colaborar com o projeto? Envie uma mensagem.</p>
+
+      <form class="contact-form" id="contactForm">
+        <label>
+          Nome
+          <input type="text" name="nome" required>
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Mensagem
+          <textarea name="mensagem" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+        <p class="form-note" id="formNote" hidden>Mensagem enviada. Obrigado por fazer parte dessa mudança.</p>
+      </form>
+
+      <div class="share-row">
+        <span>Compartilhar:</span>
+        <button class="share-btn" data-share="whatsapp" aria-label="Compartilhar no WhatsApp">WhatsApp</button>
+        <button class="share-btn" data-share="copy" aria-label="Copiar link">Copiar link</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>“O futuro da agricultura depende das escolhas sustentáveis feitas hoje.”</p>
+  <p class="footer-meta">Agro Sustentável — Projeto educativo sobre agronegócio, tecnologia e preservação.</p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+<script src="script.js"></script>
 </body>
 </html>
